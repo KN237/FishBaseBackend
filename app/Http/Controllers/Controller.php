@@ -22,7 +22,7 @@ use Illuminate\Routing\Controller as BaseController;
  * )
  *
  * @OA\Server(
- *      url='https://lit-lake-07750.herokuapp.com/api/',
+ *      url="https://lit-lake-07750.herokuapp.com/api/",
  *      description="API Server"
  * )
  ***/
