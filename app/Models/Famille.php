@@ -9,7 +9,7 @@ class Famille extends Model
 {
     use HasFactory;
 
-    protected $fillable=['nom','illustration','taille_max','coloration','distribution_naturelle','introduction_bg','forme_id','description','remarque','famille_id','category_id'];
+    protected $fillable=['nom','illustration','nomcommun','taille_max','coloration','distribution_naturelle','introduction_bg','forme_id','description','remarque','famille_id','category_id'];
 
 
     public function forme(){
