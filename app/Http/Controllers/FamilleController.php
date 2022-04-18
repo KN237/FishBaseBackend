@@ -127,6 +127,7 @@ class FamilleController extends Controller
             'distribution_naturelle'=> $request->distribution_naturelle,
             'introduction_bg'=> $request->introduction_bg,
             'remarque'=> $request->remarque,
+            'nomcommun'=> $request->nomcommun,
             'forme_id'=> $request->forme_id,
             'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
         ]);
@@ -143,6 +144,7 @@ class FamilleController extends Controller
             'distribution_naturelle'=> $request->distribution_naturelle,
             'introduction_bg'=> $request->introduction_bg,
             'remarque'=> $request->remarque,
+            'nomcommun'=> $request->nomcommun,
             'forme_id'=> $request->forme_id,]);
 
     }
@@ -290,6 +292,7 @@ class FamilleController extends Controller
                'distribution_naturelle'=> $request->distribution_naturelle,
                'introduction_bg'=> $request->introduction_bg,
                'remarque'=> $request->remarque,
+               'nomcommun'=> $request->nomcommun,
                'forme_id'=> $request->forme_id,
                'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
            ]);
@@ -306,6 +309,7 @@ class FamilleController extends Controller
                'distribution_naturelle'=> $request->distribution_naturelle,
                'introduction_bg'=> $request->introduction_bg,
                'remarque'=> $request->remarque,
+               'nomcommun'=> $request->nomcommun,
                'forme_id'=> $request->forme_id,]);
    
        }
