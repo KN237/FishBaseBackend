@@ -2,6 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormeController;
+use App\Http\Controllers\GenreController;
+use App\Http\Controllers\EspeceController;
+use App\Http\Controllers\FamilleController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
