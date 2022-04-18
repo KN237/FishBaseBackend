@@ -75,6 +75,7 @@ class FormeController extends Controller
      *    @OA\JsonContent(
      *       required={"nom"},
      *       @OA\Property(property="nom", type="string", example="XXXX"),
+     * @OA\Property(property="description", type="string", example="XXXX"),
      *    ),
      * ),
      *    
@@ -200,6 +201,7 @@ class FormeController extends Controller
      *    @OA\JsonContent(
      *       required={"nom"},
      *       @OA\Property(property="nom", type="string", example="XXXX"),
+     *       @OA\Property(property="description", type="string", example="XXXX"),
      *    ),
      * ),
      *    
