@@ -113,14 +113,14 @@ class GenreController extends Controller
 
             $genre = Genre::create([
                 'nom' => $request->nom,
-                'famille_id' => $request->forme_id,
+                'famille_id' => $request->famille_id,
                 'illustration' => $request->file('illustration')->getClientOriginalName() . '.' . $request->file('illustration')->getExtension(),
             ]);
         } else {
 
             $genre = Genre::create([
                 'nom' => $request->nom,
-                'famille_id' => $request->forme_id,
+                'famille_id' => $request->famille_id,
             ]);
         }
 
@@ -254,14 +254,14 @@ class GenreController extends Controller
 
             $genre = Genre::where('id', $id)->update([
                 'nom' => $request->nom,
-                'famille_id' => $request->forme_id,
+                'famille_id' => $request->famille_id,
                 'illustration' => $request->file('illustration')->getClientOriginalName() . '.' . $request->file('illustration')->getExtension(),
             ]);
         } else {
 
             $genre = Genre::create([
                 'nom' => $request->nom,
-                'famille_id' => $request->forme_id,
+                'famille_id' => $request->famille_id,
             ]);
         }
 

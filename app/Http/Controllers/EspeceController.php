@@ -132,7 +132,9 @@ class EspeceController extends Controller
             'nom'=> $request->nom,
             'description'=> $request->description,
             'remarque'=> $request->remarque,
-            'category_id'=> $request->category_id,]);
+            'category_id'=> $request->category_id,
+            'famille_id'=> $request->famille_id
+        ]);
 
     }
 

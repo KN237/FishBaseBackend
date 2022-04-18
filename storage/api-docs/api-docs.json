@@ -809,6 +809,10 @@
                                     "nom": {
                                         "type": "string",
                                         "example": "XXXX"
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "example": "XXXX"
                                     }
                                 },
                                 "type": "object"
@@ -904,6 +908,10 @@
                                 ],
                                 "properties": {
                                     "nom": {
+                                        "type": "string",
+                                        "example": "XXXX"
+                                    },
+                                    "description": {
                                         "type": "string",
                                         "example": "XXXX"
                                     }
