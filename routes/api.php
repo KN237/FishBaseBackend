@@ -23,9 +23,9 @@ use App\Http\Controllers\CategoryController;
 //     return $request->user();
 // });
 
-// Route::group(['middleware' => 'auth:api'], function() {
+Route::group(['middleware' => 'auth:api'], function() {
 
-// });
+});
 
 
 Route::apiResource("categories", CategoryController::class);
