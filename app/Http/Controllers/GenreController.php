@@ -75,7 +75,7 @@ class GenreController extends Controller
      *       required={"nom"},
      *       @OA\Property(property="nom", type="string", example="XXXX"),
      *       @OA\Property(property="illustration", type="string", example="XXXX"),
-     *       @OA\Property(property="famile_id", type="int", example="XXXX"),
+     *       @OA\Property(property="famille_id", type="int", example="XXXX"),
      *    ),
      * ),
      *    

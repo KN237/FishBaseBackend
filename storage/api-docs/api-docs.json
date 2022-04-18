@@ -557,6 +557,10 @@
                                         "type": "text",
                                         "example": "XXXX"
                                     },
+                                    "nomcommun": {
+                                        "type": "text",
+                                        "example": "XXXX"
+                                    },
                                     "forme_id": {
                                         "type": "integer",
                                         "example": "XXXX"
@@ -680,6 +684,10 @@
                                         "example": "XXXX"
                                     },
                                     "remarque": {
+                                        "type": "text",
+                                        "example": "XXXX"
+                                    },
+                                    "nomcommun": {
                                         "type": "text",
                                         "example": "XXXX"
                                     },
@@ -1018,7 +1026,7 @@
                                         "type": "string",
                                         "example": "XXXX"
                                     },
-                                    "famile_id": {
+                                    "famille_id": {
                                         "type": "integer",
                                         "example": "XXXX"
                                     }
