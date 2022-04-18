@@ -9,6 +9,9 @@ class Genre extends Model
 {
     use HasFactory;
 
+    protected $fillable=['nom','illustration','famille_id'];
+
+
     public function famille(){
 
         return $this->belongsTo(Famille::class);

@@ -9,6 +9,8 @@ class Forme extends Model
 {
     use HasFactory;
 
+    protected $fillable=['nom','description'];
+
     public function familles(){
 
         return $this->hasMany(Familly::class);

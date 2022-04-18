@@ -9,6 +9,8 @@ class Espece extends Model
 {
     use HasFactory;
 
+    protected $fillable=['nom','illustration','description','remarque','famille_id','category_id'];
+
     public function famille(){
 
         return $this->belongsTo(Famille::class);
