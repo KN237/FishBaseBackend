@@ -108,7 +108,7 @@ class FormeController extends Controller
     public function store(Request $request)
     {
            $forme=Forme::create([
-            'nom'=> $request->nom ]);
+            'nom'=> $request->nom,'description'=> $request->description ]);
 
         return response()->json($forme,201);
     }
@@ -235,7 +235,7 @@ class FormeController extends Controller
     public function update(Request $request, $id)
     {
                $forme=Forme::where('id',$id)->update([
-                'nom'=> $request->nom ]);
+                'nom'=> $request->nom,'description'=> $request->description ]);
         return response()->json($forme,200);
     }
 
