@@ -301,7 +301,7 @@ class FamilleController extends Controller
    
        else{
    
-           $famille=Famille::create([
+           $famille=Famille::where('id',$id)->update([
                'nom'=> $request->nom,
                'description'=> $request->description,
                'taille_max'=> $request->taille_max,

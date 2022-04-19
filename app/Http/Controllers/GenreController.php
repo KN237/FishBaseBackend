@@ -63,7 +63,7 @@ class GenreController extends Controller
     /**
      * @OA\Post(
      *      path="/genres",
-     *      operationId="addgenres",
+     *      operationId="addGenres",
      *      tags={"Genre"},
      *
      *      summary="Ajouter un genre",
@@ -259,7 +259,7 @@ class GenreController extends Controller
             ]);
         } else {
 
-            $genre = Genre::create([
+            $genre = Genre::where('id', $id)->update([
                 'nom' => $request->nom,
                 'famille_id' => $request->famille_id,
             ]);

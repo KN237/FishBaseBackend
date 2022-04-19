@@ -275,19 +275,19 @@ class EspeceController extends Controller
                'remarque'=> $request->remarque,
                'category_id'=> $request->category_id,
                'famille_id'=> $request->famille_id,
-               'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
+               'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension()
            ]);
    
        }
    
        else{
    
-           $espece=Espece::create([
+           $espece=Espece::where('id',$id)->update([
                'nom'=> $request->nom,
                'description'=> $request->description,
                'remarque'=> $request->remarque,
                'category_id'=> $request->category_id,
-               'famille_id'=> $request->famille_id,]);
+               'famille_id'=> $request->famille_id]);
    
        }
    
