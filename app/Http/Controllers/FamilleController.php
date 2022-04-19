@@ -116,7 +116,7 @@ class FamilleController extends Controller
     {
         if($request->file('illustration')){
 
-         $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName());
+         $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName(),'public');
 
            $famille=Famille::create([
             'nom'=> $request->nom,
@@ -278,7 +278,7 @@ class FamilleController extends Controller
     {
         if($request->file('illustration')){
 
-            $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName());
+            $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName(),'public');
    
               $famille=Famille::where('id',$id)->update([
                'nom'=> $request->nom,
