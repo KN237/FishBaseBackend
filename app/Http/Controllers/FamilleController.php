@@ -117,7 +117,7 @@ class FamilleController extends Controller
     {
         if($request->file('illustration')){
 
-         $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),'public');
+         $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName(),'public');
 
            $famille=Famille::create([
             'nom'=> $request->nom,
@@ -129,7 +129,7 @@ class FamilleController extends Controller
             'remarque'=> $request->remarque,
             'nomcommun'=> $request->nomcommun,
             'forme_id'=> $request->forme_id,
-            'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
+            'illustration'=> $request->file('illustration')->getClientOriginalName(),
         ]);
 
     }
@@ -282,7 +282,7 @@ class FamilleController extends Controller
     {
         if($request->file('illustration')){
 
-            $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),'public');
+            $request->file('illustration')->storeAs('familles',$request->file('illustration')->getClientOriginalName(),'public');
    
               $famille=Famille::where('id',$id)->update([
                'nom'=> $request->nom,
@@ -294,7 +294,7 @@ class FamilleController extends Controller
                'remarque'=> $request->remarque,
                'nomcommun'=> $request->nomcommun,
                'forme_id'=> $request->forme_id,
-               'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
+               'illustration'=> $request->file('illustration')->getClientOriginalName(),
            ]);
    
        }

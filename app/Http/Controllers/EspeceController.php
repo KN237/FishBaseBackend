@@ -113,7 +113,7 @@ class EspeceController extends Controller
     {
         if($request->file('illustration')){
 
-         $request->file('illustration')->storeAs('especes',$request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),'public');
+         $request->file('illustration')->storeAs('especes',$request->file('illustration')->getClientOriginalName(),'public');
 
            $espece=Espece::create([
             'nom'=> $request->nom,
@@ -121,7 +121,7 @@ class EspeceController extends Controller
             'remarque'=> $request->remarque,
             'category_id'=> $request->category_id,
             'famille_id'=> $request->famille_id,
-            'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),
+            'illustration'=> $request->file('illustration')->getClientOriginalName(),
         ]);
 
     }
@@ -267,7 +267,7 @@ class EspeceController extends Controller
     {
         if($request->file('illustration')){
 
-            $request->file('illustration')->storeAs('especes',$request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension(),'public');
+            $request->file('illustration')->storeAs('especes',$request->file('illustration')->getClientOriginalName(),'public');
    
               $espece=Espece::where('id',$id)->update([
                'nom'=> $request->nom,
@@ -275,7 +275,7 @@ class EspeceController extends Controller
                'remarque'=> $request->remarque,
                'category_id'=> $request->category_id,
                'famille_id'=> $request->famille_id,
-               'illustration'=> $request->file('illustration')->getClientOriginalName().'.'.$request->file('illustration')->getExtension()
+               'illustration'=> $request->file('illustration')->getClientOriginalName()
            ]);
    
        }
