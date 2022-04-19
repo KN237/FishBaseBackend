@@ -11,8 +11,8 @@ class Forme extends Model
 
     protected $fillable=['nom','description'];
 
-    public function familles(){
+    public function especes(){
 
-        return $this->hasMany(Familly::class);
+        return $this->hasMany(Espece::class);
     }
 }

@@ -11,12 +11,6 @@ class Famille extends Model
 
     protected $fillable=['nom','illustration','nomcommun','taille_max','coloration','distribution_naturelle','introduction_bg','forme_id','description','remarque','famille_id','category_id'];
 
-
-    public function forme(){
-
-        return $this->belongsTo(Forme::class);
-    }
-
     public function especes(){
 
         return $this->hasMany(Espece::class);
