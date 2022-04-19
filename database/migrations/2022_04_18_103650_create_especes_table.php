@@ -21,6 +21,7 @@ class CreateEspecesTable extends Migration
             $table->text("remarque")->nullable();
             $table->unsignedBigInteger("famille_id")->constrained();
             $table->unsignedBigInteger("category_id")->constrained();
+            $table->unsignedBigInteger("forme_id")->constrained();
             $table->timestamps();
         });
     }

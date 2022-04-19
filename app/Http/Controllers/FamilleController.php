@@ -83,7 +83,6 @@ class FamilleController extends Controller
      *       @OA\Property(property="illustration", type="string", example="XXXX"),
      *       @OA\Property(property="remarque", type="text", example="XXXX"),
      *       @OA\Property(property="nomcommun", type="text", example="XXXX"),
-     *       @OA\Property(property="forme_id", type="int", example="XXXX"),
      *    ),
      * ),
      *    
@@ -144,8 +143,7 @@ class FamilleController extends Controller
             'distribution_naturelle'=> $request->distribution_naturelle,
             'introduction_bg'=> $request->introduction_bg,
             'remarque'=> $request->remarque,
-            'nomcommun'=> $request->nomcommun,
-            'forme_id'=> $request->forme_id,]);
+            'nomcommun'=> $request->nomcommun,]);
 
     }
 
@@ -247,7 +245,6 @@ class FamilleController extends Controller
      *       @OA\Property(property="illustration", type="string", example="XXXX"),
      *       @OA\Property(property="remarque", type="text", example="XXXX"),
      *       @OA\Property(property="nomcommun", type="text", example="XXXX"),
-     *       @OA\Property(property="forme_id", type="int", example="XXXX"),
      *    ),
      * ),
      *    
@@ -293,7 +290,6 @@ class FamilleController extends Controller
                'introduction_bg'=> $request->introduction_bg,
                'remarque'=> $request->remarque,
                'nomcommun'=> $request->nomcommun,
-               'forme_id'=> $request->forme_id,
                'illustration'=> $request->file('illustration')->getClientOriginalName(),
            ]);
    
@@ -309,8 +305,7 @@ class FamilleController extends Controller
                'distribution_naturelle'=> $request->distribution_naturelle,
                'introduction_bg'=> $request->introduction_bg,
                'remarque'=> $request->remarque,
-               'nomcommun'=> $request->nomcommun,
-               'forme_id'=> $request->forme_id,]);
+               'nomcommun'=> $request->nomcommun,]);
    
        }
    

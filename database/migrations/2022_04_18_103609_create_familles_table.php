@@ -23,7 +23,6 @@ class CreateFamillesTable extends Migration
             $table->text("introduction_bg")->nullable();
             $table->string("illustration")->nullable();
             $table->text("remarque")->nullable();
-            $table->unsignedBigInteger("forme_id")->constrained();
             $table->timestamps();
         });
     }

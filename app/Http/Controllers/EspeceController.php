@@ -121,6 +121,7 @@ class EspeceController extends Controller
             'remarque'=> $request->remarque,
             'category_id'=> $request->category_id,
             'famille_id'=> $request->famille_id,
+            'forme_id'=> $request->forme_id,
             'illustration'=> $request->file('illustration')->getClientOriginalName(),
         ]);
 
@@ -133,7 +134,8 @@ class EspeceController extends Controller
             'description'=> $request->description,
             'remarque'=> $request->remarque,
             'category_id'=> $request->category_id,
-            'famille_id'=> $request->famille_id
+            'famille_id'=> $request->famille_id,
+            'forme_id'=> $request->forme_id,
         ]);
 
     }
@@ -275,6 +277,7 @@ class EspeceController extends Controller
                'remarque'=> $request->remarque,
                'category_id'=> $request->category_id,
                'famille_id'=> $request->famille_id,
+               'forme_id'=> $request->forme_id,
                'illustration'=> $request->file('illustration')->getClientOriginalName()
            ]);
    
@@ -287,7 +290,8 @@ class EspeceController extends Controller
                'description'=> $request->description,
                'remarque'=> $request->remarque,
                'category_id'=> $request->category_id,
-               'famille_id'=> $request->famille_id]);
+               'famille_id'=> $request->famille_id,
+               'forme_id'=> $request->forme_id,]);
    
        }
    
