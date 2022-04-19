@@ -17,6 +17,7 @@ class CreateGenresTable extends Migration
             $table->id();
             $table->string("nom");
             $table->string("illustration");
+            $table->unsignedBigInteger("famille_id")->constrained();
             $table->timestamps();
         });
     }
