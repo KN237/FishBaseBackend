@@ -80,6 +80,7 @@ class EspeceController extends Controller
      *       @OA\Property(property="remarque", type="text", example="XXXX"),
      *       @OA\Property(property="category_id", type="int", example="XXXX"),
      * @OA\Property(property="famille_id", type="int", example="XXXX"),
+     * @OA\Property(property="forme_id", type="int", example="XXXX"),
      *    ),
      * ),
      *    
@@ -235,6 +236,7 @@ class EspeceController extends Controller
      *       @OA\Property(property="remarque", type="text", example="XXXX"),
      *       @OA\Property(property="category_id", type="int", example="XXXX"),
      * @OA\Property(property="famille_id", type="int", example="XXXX"),
+     * @OA\Property(property="forme_id", type="int", example="XXXX"),
      *    ),
      * ),
      *    
