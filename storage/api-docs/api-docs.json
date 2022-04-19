@@ -560,10 +560,6 @@
                                     "nomcommun": {
                                         "type": "text",
                                         "example": "XXXX"
-                                    },
-                                    "forme_id": {
-                                        "type": "integer",
-                                        "example": "XXXX"
                                     }
                                 },
                                 "type": "object"
@@ -689,10 +685,6 @@
                                     },
                                     "nomcommun": {
                                         "type": "text",
-                                        "example": "XXXX"
-                                    },
-                                    "forme_id": {
-                                        "type": "integer",
                                         "example": "XXXX"
                                     }
                                 },
