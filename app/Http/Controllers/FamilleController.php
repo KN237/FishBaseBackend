@@ -127,7 +127,6 @@ class FamilleController extends Controller
             'introduction_bg'=> $request->introduction_bg,
             'remarque'=> $request->remarque,
             'nomcommun'=> $request->nomcommun,
-            'forme_id'=> $request->forme_id,
             'illustration'=> $request->file('illustration')->getClientOriginalName(),
         ]);
 
