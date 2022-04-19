@@ -299,6 +299,10 @@
                                     "famille_id": {
                                         "type": "integer",
                                         "example": "XXXX"
+                                    },
+                                    "forme_id": {
+                                        "type": "integer",
+                                        "example": "XXXX"
                                     }
                                 },
                                 "type": "object"
@@ -411,6 +415,10 @@
                                         "example": "XXXX"
                                     },
                                     "famille_id": {
+                                        "type": "integer",
+                                        "example": "XXXX"
+                                    },
+                                    "forme_id": {
                                         "type": "integer",
                                         "example": "XXXX"
                                     }
